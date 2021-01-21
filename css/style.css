@@ -1,0 +1,111 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url("../img/backgrounds.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Bungee Hairline', cursive;
+}
+html{
+    font-size: 62.5%;
+}
+header{
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+}
+
+/* Reset Button */
+.btn-container{
+    text-align: center;
+}
+.restart-btn{
+    color: white;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 20px 20px;
+    font-weight: bold;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 0,3s ease;
+}
+.restart-btn:hover{
+    cursor: pointer;
+    background-color: purple;
+    color: black;
+}
+
+/* Score Board */
+.score-board{
+    margin: 5% auto 5%;
+    padding: 10px 10px;
+    position: relative;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border: 3px solid white;
+    width: 450px;
+    font-size: 10rem;
+}
+.badge{
+    background: #1b81c5;
+    font-size: 3.5rem;
+    padding: 10px 10px;
+    border-radius: 12px;
+}
+#user-badge{
+    position: absolute;
+    top: 30px;
+    left: -70px;
+}
+#cpu-badge{
+    position: absolute;
+    top: 30px;
+    right: -40px;
+}
+
+/* Player choices */
+.choices{
+    display: flex;
+    justify-content: center;
+}
+.choices .choice{
+    cursor: pointer;
+    border: 3px solid white;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 30%;
+    margin-right: 20px;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.1s ease;
+}
+.choices .choice:hover{
+    cursor: pointer;
+    background: purple;
+}
+.choices .choice img{
+    width: 100px;
+}
+h2{
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Modal */
+.text-win{
+    color: rgb(19, 196, 19);
+    font-size: 3rem;
+    font-weight: bold;
+}
+.text-lose{
+    color: rgb(238, 23, 23);
+    font-size: 3rem;
+    font-weight: bold;
+}
+.modal-content p{
+    font-size: 2.5rem;
+    color: black;
+    font-weight: bold;
+}
